@@ -1,0 +1,35 @@
+body {
+  font: 16px Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+a {
+  color: #0d6efd;
+}
+
+main {
+  min-height: 65vh;
+}
+
+.card {
+  border-radius: 12px;
+  border: none;
+}
+
+.card h3 {
+  color: #0d6efd;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  margin-right: 10px;
+  margin-top: 10px;
+}

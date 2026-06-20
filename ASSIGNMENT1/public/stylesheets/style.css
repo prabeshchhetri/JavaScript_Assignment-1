@@ -1,35 +1,189 @@
+/* Main portfolio styling for Prabesh Chhetri */
+
 body {
-  font: 16px Arial, Helvetica, sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #fff8dc;
+  color: #111111;
 }
 
-a {
-  color: #0d6efd;
+/* Header / Jumbotron */
+.p-5.bg-primary {
+  background: linear-gradient(135deg, #111111, #2b2b2b) !important;
+  padding: 80px 20px !important;
+  color: #fff3b0 !important;
 }
 
+.p-5.bg-primary h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff3b0;
+}
+
+.p-5.bg-primary p {
+  font-size: 20px;
+  margin-top: 12px;
+  color: #fff8dc;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000000 !important;
+  padding: 16px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-nav .nav-link {
+  color: #fff3b0 !important;
+  font-size: 17px;
+  margin: 0 12px;
+  transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+/* Main content */
 main {
   min-height: 65vh;
+  padding: 45px 0;
 }
 
+main h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 20px;
+}
+
+main h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #2b2b2b;
+}
+
+/* Cards */
 .card {
-  border-radius: 12px;
-  border: none;
+  border: 2px solid #111111;
+  border-radius: 18px;
+  background-color: #fffdf0;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
 }
 
 .card h3 {
-  color: #0d6efd;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 30px;
+  padding: 11px 24px;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #111111 !important;
+  border-color: #111111 !important;
+  color: #fff3b0 !important;
+}
+
+.btn-primary:hover {
+  background-color: #fff3b0 !important;
+  border-color: #111111 !important;
+  color: #111111 !important;
+}
+
+.btn-outline-dark {
+  border-color: #111111 !important;
+  color: #111111 !important;
+}
+
+.btn-outline-dark:hover {
+  background-color: #111111 !important;
+  color: #fff3b0 !important;
+}
+
+/* Links */
+a {
+  color: #111111;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #6b5b00;
+}
+
+/* Footer */
+footer {
+  background: #000000 !important;
+  color: #fff3b0;
+}
+
+footer p {
+  margin-bottom: 10px;
+  color: #fff8dc;
 }
 
 footer a {
+  color: #fff3b0 !important;
   text-decoration: none;
+  font-weight: 600;
 }
 
 footer a:hover {
+  color: #ffffff !important;
   text-decoration: underline;
 }
 
-.btn {
-  margin-right: 10px;
-  margin-top: 10px;
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .p-5.bg-primary h1 {
+    font-size: 34px;
+  }
+
+  .p-5.bg-primary p {
+    font-size: 16px;
+  }
+
+  main h1 {
+    font-size: 32px;
+  }
+
+  main h2 {
+    font-size: 26px;
+  }
+
+  main p {
+    font-size: 16px;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 6px 0;
+    text-align: center;
+  }
 }
